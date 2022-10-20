@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+  </head>
+  <body
+    style="
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+      padding: 30px;
+      width: 500px;
+      margin: auto;
+    "
+  >
+    <div style="background-color: aliceblue; padding: 30px 20px">
+      <form
+        action=""
+        method="post"
+        autocomplete="off"
+        enctype="multipart/form-data"
+      >
+        <fieldset style="padding: 25px">
+          <legend style="font-weight: 700">Basic Informaton</legend>
+
+          <div style="margin-bottom: 5px">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name" />
+          </div>
+          <div style="margin-bottom: 5px">
+            <label for="Email">Email</label>
+            <input type="text" name="" id="Email" />
+          </div>
+          <div style="margin-bottom: 5px">
+            <label for="DateOfBirth">Dare Of Birth </label>
+            <input type="date" name="" id="DateOfBirth" />
+          </div>
+          <div style="margin-bottom: 5px">
+            <label for="Gender">Gender </label>
+            <select name="Gender" id="Gender">
+              <option value="">select from list</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 5px">
+            <label for="address" style="vertical-align: top">Address</label>
+            <textarea name="address" id="address" cols="30" rows="3"></textarea>
+          </div>
+          <div style="margin-bottom: 5px">
+            <label for="Category">Category</label>
+            <select name="Category" id="Category">
+              <option value="">select from list</option>
+
+              <optgroup label="Scientific">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </optgroup>
+              <optgroup label="Arts">
+                <option value="1">Option 3</option>
+                <option value="2">Option 4</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 5px">
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="Flavour" name="Flavour" />
+
+            <datalist id="ice-cream-flavors">
+              <option value="Chocolate"></option>
+              <option value="Coconut"></option>
+              <option value="Mint"></option>
+              <option value="Strawberry"></option>
+              <option value="Vanilla"></option>
+            </datalist>
+          </div>
+
+          <div style="margin-bottom: 5px">
+            <hr />
+            <button type="submit">Save Changes</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
